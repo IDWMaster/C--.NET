@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="Array.h" open="0" top="0" tabpos="2">
+		<Cursor position="174" topLine="0" />
+	</File>
+	<File name="FileStream.cpp" open="1" top="1" tabpos="2">
+		<Cursor position="143" topLine="0" />
+	</File>
+	<File name="FileStream.h" open="1" top="0" tabpos="1">
+		<Cursor position="499" topLine="4" />
+	</File>
+	<File name="Stream.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="123" topLine="0" />
+	</File>
+	<File name="Stream.h" open="1" top="0" tabpos="3">
+		<Cursor position="370" topLine="4" />
+	</File>
+	<File name="include\StdString.h" open="0" top="0" tabpos="2">
+		<Cursor position="192" topLine="2" />
+	</File>
+	<File name="src\StdString.cpp" open="0" top="0" tabpos="1">
+		<Cursor position="572" topLine="12" />
+	</File>
+</CodeBlocks_layout_file>

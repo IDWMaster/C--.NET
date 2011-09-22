@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="LibUnitTester" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin\Debug\LibUnitTester" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Debug\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="..\CPlusNet\include" />
+					<Add directory="..\CPlusNet" />
+				</Compiler>
+				<Linker>
+					<Add library="..\CPlusNet\CPlusNet.dll" />
+					<Add library="C:\windows\system32\kernel32.dll" />
+					<Add library="C:\windows\system32\user32.dll" />
+					<Add library="libkernel32.a" />
+					<Add library="libuser32.a" />
+					<Add directory="C:\MinGW\lib" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin\Release\LibUnitTester" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj\Release\" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="main.cpp" />
+		<Unit filename="wincore.h" />
+		<Extensions>
+			<code_completion>
+				<search_path add="..\CPlusNet\include" />
+				<search_path add="..\CPlusNet" />
+			</code_completion>
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

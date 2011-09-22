@@ -1,0 +1,36 @@
+EXPORTS
+    _ZN10FileStream4ReadE5ArrayIhEii @1
+    _ZN10FileStream5FlushEv @2
+    _ZN10FileStream5WriteE5ArrayIhEii @3
+    _ZN10FileStreamC1E6_iobuf @4
+    _ZN10FileStreamC2E6_iobuf @5
+    _ZN10FileStreamD0Ev @6
+    _ZN10FileStreamD1Ev @7
+    _ZN10FileStreamD2Ev @8
+    _ZN6System2IO6StreamC1Ev @9
+    _ZN6System2IO6StreamC2Ev @10
+    _ZN6System2IO6StreamD0Ev @11
+    _ZN6System2IO6StreamD1Ev @12
+    _ZN6System2IO6StreamD2Ev @13
+    _ZN9StdString4cstrEv @14
+    _ZN9StdStringC1EPc @15
+    _ZN9StdStringC1Ev @16
+    _ZN9StdStringC2EPc @17
+    _ZN9StdStringC2Ev @18
+    _ZN9StdStringD0Ev @19
+    _ZN9StdStringD1Ev @20
+    _ZN9StdStringD2Ev @21
+    _ZN9StdStringpLEPc @22
+    _ZN9StdStringplEPc @23
+    _ZN9StdStringplES_ @24
+    _ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_PKS3_ @25
+    _ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_S8_ @26
+    _ZTI10FileStream @27 DATA
+    _ZTI9StdString @28 DATA
+    _ZTIN6System2IO6StreamE @29 DATA
+    _ZTS10FileStream @30 DATA
+    _ZTS9StdString @31 DATA
+    _ZTSN6System2IO6StreamE @32 DATA
+    _ZTV10FileStream @33 DATA
+    _ZTV9StdString @34 DATA
+    _ZTVN6System2IO6StreamE @35 DATA

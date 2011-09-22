@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1316649415 source:c:\users\webadm\desktop\cplusnet\libunittester\main.cpp
+	<iostream>
+	<StdString.h>
+	"wincore.h"
+	<Array.h>
+
+1316563611 c:\users\webadm\desktop\cplusnet\libunittester\stdstring.h
+	<string>
+
+1316626098 c:\users\webadm\desktop\cplusnet\cplusnet\include\stdstring.h
+	<string>
+
+1316648251 c:\users\webadm\desktop\cplusnet\libunittester\wincore.h
+	<stdlib.h>
+
+1316649409 c:\users\webadm\desktop\cplusnet\cplusnet\array.h
+	<malloc.h>
+	<stdlib.h>
+
