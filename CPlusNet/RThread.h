@@ -21,7 +21,7 @@ class Thread
     protected:
     private:
     ///Whether or not the underlying NativeThread has been created, and initialized
-    BOOL hascreated;
+    bool hascreated;
     NativeThread* underlyingthread;
 
 };

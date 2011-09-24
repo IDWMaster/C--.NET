@@ -12,3 +12,4 @@ to indicate your contribution to the project.
 #include <stream.h>
 #include <RThread.h>
 #include <console.h>
+#include <BinaryReader.h>
