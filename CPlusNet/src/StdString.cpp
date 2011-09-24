@@ -10,6 +10,15 @@ StdString::StdString(char* other) {
 
 internstr = other;
 }
+StdString StdString::operator+(char other) {
+StdString newstr = StdString();
+newstr.internstr = internstr+other;
+return newstr;
+}
+StdString::StdString(const char* other) {
+
+internstr = (const char*)other;
+}
 
 StdString StdString::operator+(StdString other) {
 StdString newstr = StdString();
@@ -19,6 +28,9 @@ return newstr;
 StdString::~StdString()
 {
     //dtor
+}
+int StdString::Length() {
+return internstr.length();
 }
 char* StdString::cstr() {
 return (char*)internstr.c_str();
@@ -30,5 +42,8 @@ mstr.internstr = internstr+other;
 return mstr;
 }
 void StdString::operator +=(char* other) {
+internstr+=other;
+}
+void StdString::operator +=(char other) {
 internstr+=other;
 }

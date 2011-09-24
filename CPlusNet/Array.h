@@ -1,3 +1,10 @@
+/**
+Copyleft 2011 Brian Bosak - Some rights reserved
+Please take the courtesy of placing this notice on all reproductions/derivitives of this
+code. This may perhaps be the world's biggest C++ abstraction library
+Contributions are welcome. Place your name and your contribution below this line
+to indicate your contribution to the project.
+*/
 #ifndef ARRAY_H
 #define ARRAY_H
 #include <malloc.h>
@@ -16,11 +23,12 @@ class Array
             internarray = (T*)malloc(elements*sizeof(T));
             Length = elements;
         }
+
         //**The length of the array (in elements) */
         long Length;
         /** Creates a wrapper around an existing array. Does NOT memcpy it!*/
-        Array<T>(T* existingarray, long length) {
-            Length = length;
+        Array<T>(T* existingarray) {
+            Length = sizeof(existingarray)/sizeof(T);
             internarray = existingarray;
         }
         T operator[] (int index) {

@@ -34,11 +34,27 @@
 				</Linker>
 			</Target>
 		</Build>
+		<Compiler>
+			<Add option="-Dwin32" />
+		</Compiler>
 		<Unit filename="Array.h" />
+		<Unit filename="BinaryReader.cpp" />
+		<Unit filename="BinaryReader.h" />
+		<Unit filename="BinaryWriter.cpp" />
+		<Unit filename="BinaryWriter.h" />
+		<Unit filename="CLRHeader.h" />
+		<Unit filename="CProperty.h" />
+		<Unit filename="Console.cpp" />
+		<Unit filename="Console.h" />
+		<Unit filename="Exception.h" />
 		<Unit filename="FileStream.cpp" />
 		<Unit filename="FileStream.h" />
+		<Unit filename="RThread.cpp" />
+		<Unit filename="RThread.h" />
 		<Unit filename="Stream.cpp" />
 		<Unit filename="Stream.h" />
+		<Unit filename="Thread.cpp" />
+		<Unit filename="Thread.h" />
 		<Unit filename="include\StdString.h" />
 		<Unit filename="src\StdString.cpp" />
 		<Extensions>

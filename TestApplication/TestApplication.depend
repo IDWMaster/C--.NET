@@ -1,0 +1,51 @@
+# depslib dependency file v1.0
+1316798932 source:c:\users\webadm\desktop\cplusnet\testapplication\main.cpp
+	<iostream>
+	<windows.h>
+	<clrheader.h>
+
+1316805079 c:\users\webadm\desktop\cplusnet\cplusnet\include\stdstring.h
+	<string>
+
+1316717660 c:\users\webadm\desktop\cplusnet\cplusnet\filestream.h
+	"Stream.h"
+	"include/StdString.h"
+	<stdlib.h>
+
+1316744215 c:\users\webadm\desktop\cplusnet\cplusnet\stream.h
+	<stdlib.h>
+	"Exception.h"
+	"Array.h"
+	"CProperty.h"
+
+1316795105 c:\users\webadm\desktop\cplusnet\cplusnet\exception.h
+	"include/stdstring.h"
+
+1316799111 c:\users\webadm\desktop\cplusnet\cplusnet\array.h
+	<malloc.h>
+	<stdlib.h>
+
+1316702327 c:\users\webadm\desktop\cplusnet\cplusnet\cproperty.h
+
+1316809683 c:\users\webadm\desktop\cplusnet\cplusnet\binarywriter.h
+	"Stream.h"
+	"include/StdString.h"
+	"Array.h"
+
+1316795094 c:\users\webadm\desktop\cplusnet\cplusnet\thread.h
+	<windows.h>
+
+1316795749 c:\users\webadm\desktop\cplusnet\cplusnet\console.h
+	"include/stdstring.h"
+
+1316795100 c:\users\webadm\desktop\cplusnet\cplusnet\rthread.h
+	"Thread.h"
+
+1316795351 c:\users\webadm\desktop\cplusnet\cplusnet\clrheader.h
+	<include/StdString.h>
+	<FileStream.h>
+	<BinaryWriter.h>
+	<stream.h>
+	<RThread.h>
+	<console.h>
+

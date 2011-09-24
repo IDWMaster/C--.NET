@@ -2,35 +2,86 @@ EXPORTS
     _ZN10FileStream4ReadE5ArrayIhEii @1
     _ZN10FileStream5FlushEv @2
     _ZN10FileStream5WriteE5ArrayIhEii @3
-    _ZN10FileStreamC1E6_iobuf @4
-    _ZN10FileStreamC2E6_iobuf @5
-    _ZN10FileStreamD0Ev @6
-    _ZN10FileStreamD1Ev @7
-    _ZN10FileStreamD2Ev @8
-    _ZN6System2IO6StreamC1Ev @9
-    _ZN6System2IO6StreamC2Ev @10
-    _ZN6System2IO6StreamD0Ev @11
-    _ZN6System2IO6StreamD1Ev @12
-    _ZN6System2IO6StreamD2Ev @13
-    _ZN9StdString4cstrEv @14
-    _ZN9StdStringC1EPc @15
-    _ZN9StdStringC1Ev @16
-    _ZN9StdStringC2EPc @17
-    _ZN9StdStringC2Ev @18
-    _ZN9StdStringD0Ev @19
-    _ZN9StdStringD1Ev @20
-    _ZN9StdStringD2Ev @21
-    _ZN9StdStringpLEPc @22
-    _ZN9StdStringplEPc @23
-    _ZN9StdStringplES_ @24
-    _ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_PKS3_ @25
-    _ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_S8_ @26
-    _ZTI10FileStream @27 DATA
-    _ZTI9StdString @28 DATA
-    _ZTIN6System2IO6StreamE @29 DATA
-    _ZTS10FileStream @30 DATA
-    _ZTS9StdString @31 DATA
-    _ZTSN6System2IO6StreamE @32 DATA
-    _ZTV10FileStream @33 DATA
-    _ZTV9StdString @34 DATA
-    _ZTVN6System2IO6StreamE @35 DATA
+    _ZN10FileStream6GetLenEv @4
+    _ZN10FileStream6GetPosEv @5
+    _ZN10FileStream6SetLenEl @6
+    _ZN10FileStream6SetPosEl @7
+    _ZN10FileStreamC1E9StdString @8
+    _ZN10FileStreamC1EP6_iobuf @9
+    _ZN10FileStreamC2E9StdString @10
+    _ZN10FileStreamC2EP6_iobuf @11
+    _ZN10FileStreamD0Ev @12
+    _ZN10FileStreamD1Ev @13
+    _ZN10FileStreamD2Ev @14
+    _ZN5ArrayIhEC1EPh @15
+    _ZN5ArrayIhED1Ev @16
+    _ZN6System2IO12BinaryWriter5WriteE5ArrayIhE @17
+    _ZN6System2IO12BinaryWriter5WriteE9StdString @18
+    _ZN6System2IO12BinaryWriter5WriteEd @19
+    _ZN6System2IO12BinaryWriter5WriteEf @20
+    _ZN6System2IO12BinaryWriter5WriteEi @21
+    _ZN6System2IO12BinaryWriter5WriteEl @22
+    _ZN6System2IO12BinaryWriterC1EPNS0_6StreamE @23
+    _ZN6System2IO12BinaryWriterC2EPNS0_6StreamE @24
+    _ZN6System2IO12BinaryWriterD0Ev @25
+    _ZN6System2IO12BinaryWriterD1Ev @26
+    _ZN6System2IO12BinaryWriterD2Ev @27
+    _ZN6System2IO6StreamC1Ev @28
+    _ZN6System2IO6StreamC2Ev @29
+    _ZN6System2IO6StreamD0Ev @30
+    _ZN6System2IO6StreamD1Ev @31
+    _ZN6System2IO6StreamD2Ev @32
+    _ZN6System9Threading12NativeThread14CallbackThreadEPv@4 @33
+    _ZN6System9Threading12NativeThread5StartEPv @34
+    _ZN6System9Threading12NativeThreadC1EPFvPvE @35
+    _ZN6System9Threading12NativeThreadC2EPFvPvE @36
+    _ZN6System9Threading12NativeThreadD0Ev @37
+    _ZN6System9Threading12NativeThreadD1Ev @38
+    _ZN6System9Threading12NativeThreadD2Ev @39
+    _ZN6System9Threading6Thread5StartEPv @40
+    _ZN6System9Threading6ThreadC1EPFvPvE @41
+    _ZN6System9Threading6ThreadC2EPFvPvE @42
+    _ZN6System9Threading6ThreadD0Ev @43
+    _ZN6System9Threading6ThreadD1Ev @44
+    _ZN6System9Threading6ThreadD2Ev @45
+    _ZN7Console5WriteE9StdString @46
+    _ZN7Console8ReadLineEv @47
+    _ZN7Console9WriteLineE9StdString @48
+    _ZN9StdString4cstrEv @49
+    _ZN9StdString6LengthEv @50
+    _ZN9StdStringC1EPKc @51
+    _ZN9StdStringC1EPc @52
+    _ZN9StdStringC1Ev @53
+    _ZN9StdStringC2EPKc @54
+    _ZN9StdStringC2EPc @55
+    _ZN9StdStringC2Ev @56
+    _ZN9StdStringD0Ev @57
+    _ZN9StdStringD1Ev @58
+    _ZN9StdStringD2Ev @59
+    _ZN9StdStringpLEPc @60
+    _ZN9StdStringpLEc @61
+    _ZN9StdStringplEPc @62
+    _ZN9StdStringplES_ @63
+    _ZN9StdStringplEc @64
+    _ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_PKS3_ @65
+    _ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_S3_ @66
+    _ZStplIcSt11char_traitsIcESaIcEESbIT_T0_T1_ERKS6_S8_ @67
+    _ZTI10FileStream @68 DATA
+    _ZTI9StdString @69 DATA
+    _ZTIN6System2IO12BinaryWriterE @70 DATA
+    _ZTIN6System2IO6StreamE @71 DATA
+    _ZTIN6System9Threading12NativeThreadE @72 DATA
+    _ZTIN6System9Threading6ThreadE @73 DATA
+    _ZTS10FileStream @74 DATA
+    _ZTS9StdString @75 DATA
+    _ZTSN6System2IO12BinaryWriterE @76 DATA
+    _ZTSN6System2IO6StreamE @77 DATA
+    _ZTSN6System9Threading12NativeThreadE @78 DATA
+    _ZTSN6System9Threading6ThreadE @79 DATA
+    _ZTV10FileStream @80 DATA
+    _ZTV9StdString @81 DATA
+    _ZTVN6System2IO12BinaryWriterE @82 DATA
+    _ZTVN6System2IO6StreamE @83 DATA
+    _ZTVN6System9Threading12NativeThreadE @84 DATA
+    _ZTVN6System9Threading6ThreadE @85 DATA
+    getchar @86
