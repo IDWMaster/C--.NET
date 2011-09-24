@@ -47,7 +47,7 @@
 1316664319 source:c:\users\webadm\desktop\cplusnet\cplusnet\stream.cpp
 	"Stream.h"
 
-1316795086 source:c:\users\webadm\desktop\cplusnet\cplusnet\thread.cpp
+1316887614 source:c:\users\webadm\desktop\cplusnet\cplusnet\thread.cpp
 	"Thread.h"
 	<stdio.h>
 
@@ -61,4 +61,10 @@
 	"Stream.h"
 	"include/StdString.h"
 	"Array.h"
+
+1316891228 source:c:\users\webadm\desktop\cplusnet\cplusnet\binaryreader.cpp
+	"BinaryReader.h"
+
+1316890836 c:\users\webadm\desktop\cplusnet\cplusnet\binaryreader.h
+	"Stream.h"
 

@@ -1,0 +1,11 @@
+To build CPlusNet, just compile all the CPP files in the folder. At this moment, no linking should be required. I will provide a Makefile at a later time. Sorry for the inconvenience. 
+
+
+
+License:
+Anyone is allowed to use this library, distribute it, and modify it without restriction. I provide NO WARRANTY whatsoever on this library. It is recommended that you place the notice below on all modified versions of this work out of courtesy, but it is not mandatory.
+Copyleft 2011 Brian Bosak - Some rights reserved
+Please take the courtesy of placing this notice on all reproductions/derivitives of this
+code. This may perhaps be the world's biggest C++ abstraction library
+Contributions are welcome. Place your name and your contribution below this line
+to indicate your contribution to the project.

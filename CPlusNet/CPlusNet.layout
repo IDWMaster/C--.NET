@@ -4,10 +4,16 @@
 	<File name="Array.h" open="0" top="0" tabpos="2">
 		<Cursor position="1380" topLine="19" />
 	</File>
-	<File name="BinaryWriter.cpp" open="1" top="0" tabpos="2">
+	<File name="BinaryReader.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="120" topLine="0" />
+	</File>
+	<File name="BinaryReader.h" open="1" top="0" tabpos="5">
+		<Cursor position="62" topLine="0" />
+	</File>
+	<File name="BinaryWriter.cpp" open="0" top="0" tabpos="1">
 		<Cursor position="1388" topLine="26" />
 	</File>
-	<File name="BinaryWriter.h" open="1" top="0" tabpos="3">
+	<File name="BinaryWriter.h" open="1" top="0" tabpos="1">
 		<Cursor position="938" topLine="14" />
 	</File>
 	<File name="CProperty.h" open="0" top="0" tabpos="0">
@@ -34,13 +40,13 @@
 	<File name="RThread.h" open="0" top="0" tabpos="0">
 		<Cursor position="347" topLine="0" />
 	</File>
-	<File name="Stream.h" open="0" top="0" tabpos="3">
+	<File name="Stream.h" open="1" top="1" tabpos="7">
 		<Cursor position="991" topLine="17" />
 	</File>
-	<File name="Thread.cpp" open="0" top="0" tabpos="1">
-		<Cursor position="347" topLine="0" />
+	<File name="Thread.cpp" open="1" top="0" tabpos="4">
+		<Cursor position="388" topLine="0" />
 	</File>
-	<File name="Thread.h" open="0" top="0" tabpos="2">
+	<File name="Thread.h" open="1" top="0" tabpos="3">
 		<Cursor position="394" topLine="3" />
 	</File>
 	<File name="include\StdString.h" open="0" top="0" tabpos="2">
