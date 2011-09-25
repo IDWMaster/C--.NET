@@ -8,6 +8,7 @@ to indicate your contribution to the project.
 #ifndef BINARYREADER_H
 #define BINARYREADER_H
 #include "Stream.h"
+#include "include/stdstring.h"
 namespace System {
 namespace IO {
 class BinaryReader

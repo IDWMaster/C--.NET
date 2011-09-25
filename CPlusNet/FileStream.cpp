@@ -8,14 +8,7 @@ to indicate your contribution to the project.
 #include "FileStream.h"
 #include "include/StdString.h"
 #include <stdio.h>
-FileStream::FileStream(FILE* nativehandle)
-{
-    //ctor
-    fpointer = nativehandle;
-    ipos = 0;
-    GetLen();
 
-}
 long FileStream::GetLen() {
 fseek(fpointer,0,SEEK_END);
 flen = (long)ftell(fpointer);
@@ -38,28 +31,28 @@ fseek(fpointer,value,SEEK_SET);
 }
 int FileStream::Read(Array<byte> data, int offset, int count) {
 int available;
-if(flen<count) {
+if(flen-ipos<count) {
+
 available = flen;
 } else {
 available = count;
 }
-int retval = (int)fread(data.internarray+offset,1,(size_t)available,fpointer);
+int retval = (int)fread(data.internarray+(size_t)offset,(size_t)1,(size_t)available,fpointer);
 ipos = ftell(fpointer);
+
 return retval;
 }
 void FileStream::Write(Array<byte> data, int offset, int count) {
 
-fwrite(data.internarray+offset,1,(size_t)count,fpointer);
+int dbg = fwrite(data.internarray+(size_t)offset,(size_t)1,(size_t)count,fpointer);
 
-ipos = ftell(fpointer);
+ipos +=count;
 if(ipos>flen) {
 flen = ipos;
 }
-return;
 }
 void FileStream::Flush() {
 fflush(fpointer);
-return;
 }
 FileStream::FileStream(StdString filename) {
     ipos = 0;

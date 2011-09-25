@@ -30,7 +30,7 @@ StdString::~StdString()
     //dtor
 }
 int StdString::Length() {
-return internstr.length();
+return (int)internstr.length();
 }
 char* StdString::cstr() {
 return (char*)internstr.c_str();

@@ -14,12 +14,16 @@ using namespace System::IO;
 void athread(void* args) {
 FileStream mstr = FileStream("test.txt");
     BinaryWriter mwriter (&mstr);
+    mwriter.Write((int)5);
     mwriter.Write("Hello world! Welcome to the NEW C++");
     mstr.Flush();
 
     BinaryReader mreader (&mstr);
     mstr.SetPos(0);
-    Console::WriteLine(mreader.ReadString());
+     cout<<mreader.ReadInt32();
+    mreader.ReadString();
+   // StdString text = mreader.ReadString();
+  //  Console::WriteLine(text);
     Console::WriteLine("Hello world!");
 
 }

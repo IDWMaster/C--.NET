@@ -6,6 +6,7 @@ Contributions are welcome. Place your name and your contribution below this line
 to indicate your contribution to the project.
 */
 #include "BinaryWriter.h"
+#include <iostream>
 namespace System {
     namespace IO {
 BinaryWriter::BinaryWriter(Stream* stream)
@@ -17,13 +18,13 @@ void BinaryWriter::Write(StdString text) {
 int len = text.Length();
 //Take the pointer to the int with sizeof(int)
 byte* header = (byte*)&len;
-byte* data = (byte*)(void*)text.cstr();
+byte* data = (byte*)text.cstr();
 underlyingstream->Write(header,0,sizeof(int));
 underlyingstream->Write(data,0,sizeof(char)*len);
 
 }
 void BinaryWriter::Write(int value) {
-byte* data = (byte*)&value;
+byte* data = (byte*)(void*)&value;
 underlyingstream->Write(data,0,sizeof(int));
 }
 void BinaryWriter::Write(long value) {

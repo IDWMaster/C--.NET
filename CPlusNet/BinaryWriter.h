@@ -1,6 +1,4 @@
-#include "Stream.h"
-#include "include/StdString.h"
-#include "Array.h"
+
 /**
 Copyleft 2011 Brian Bosak - Some rights reserved
 Please take the courtesy of placing this notice on all reproductions/derivitives of this
@@ -10,7 +8,10 @@ to indicate your contribution to the project.
 */
 #ifndef BINARYWRITER_H
 #define BINARYWRITER_H
-
+#include <string>
+#include "Stream.h"
+#include "include/StdString.h"
+#include "Array.h"
 namespace System {
     namespace IO {
 class BinaryWriter

@@ -16,7 +16,7 @@ class FileStream : public System::IO::Stream
 {
     public:
         /** Default constructor */
-        FileStream(FILE* nativehandle);
+
         FileStream(StdString filename);
         ///Reads data from the input strema
         int Read(Array<byte> data, int offset, int count);

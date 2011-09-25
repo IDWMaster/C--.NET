@@ -1,3 +1,6 @@
+//CONTRIBUTION REQUESTED! URGENT: See line 24
+
+
 /**
 Copyleft 2011 Brian Bosak - Some rights reserved
 Please take the courtesy of placing this notice on all reproductions/derivitives of this
@@ -16,20 +19,38 @@ class Array
     public:
     ~Array() {
         //Delete all elements in the underlying array (especially important if this instance was created with the 'new' keyword)
+	if(*refcount == 0) {
     delete[] internarray;
+	//TODO: Need feedback here. Should I use delete[], or delete? Since this was allocated with new[]?
+	//I know it's usually recommended, but this has been cast to int*, so is it still necessary?
+	delete refcount;
+	} else {
+	*refcount-=1;
+	}
     }
         /** Default constructor */
         Array<T>(int elements) {
             internarray = (T*)malloc(elements*sizeof(T));
             Length = elements;
+			refcount = (int*)new byte[sizeof(int)];
+			*refcount = 0;
         }
-
+		//Create shallow copy (increment reference)
+		Array<T>(const Array<T>& copy) {
+			Length = copy.Length;
+			internarray = copy.internarray;
+			refcount = copy.refcount;
+			*refcount+=1;
+		}
         //**The length of the array (in elements) */
         long Length;
-        /** Creates a wrapper around an existing array. Does NOT memcpy it!*/
+        /** Creates a wrapper around an existing array, and memcpys it into this new array!*/
         Array<T>(T* existingarray) {
-            Length = sizeof(existingarray)/sizeof(T);
-            internarray = existingarray;
+            Length = sizeof(existingarray);
+            internarray = new T[sizeof(existingarray)/sizeof(T)];
+			memcpy(internarray,existingarray,sizeof(internarray));
+			refcount = (int*)new byte[sizeof(int)];
+			*refcount = 0;
         }
         T operator[] (int index) {
             return internarray[index];
@@ -40,10 +61,10 @@ class Array
         }
         //The internal data buffer
         T* internarray;
+
     protected:
     private:
-
-
+		int* refcount;
 
 };
 
