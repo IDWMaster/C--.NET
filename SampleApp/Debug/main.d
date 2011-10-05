@@ -6,6 +6,7 @@ main.d main.o: ../main.cpp C:\Users\webadm\workspace\CPlusNet/clrheader.h \
  C:\Users\webadm\workspace\CPlusNet/include/stdstring.h \
  C:\Users\webadm\workspace\CPlusNet/Array.h \
  C:\Users\webadm\workspace\CPlusNet/CProperty.h \
+ C:\Users\webadm\workspace\CPlusNet/BaseObject.h \
  C:\Users\webadm\workspace\CPlusNet/include/StdString.h \
  C:\Users\webadm\workspace\CPlusNet/BinaryWriter.h \
  C:\Users\webadm\workspace\CPlusNet/RThread.h \
@@ -28,6 +29,8 @@ C:\Users\webadm\workspace\CPlusNet/include/stdstring.h:
 C:\Users\webadm\workspace\CPlusNet/Array.h:
 
 C:\Users\webadm\workspace\CPlusNet/CProperty.h:
+
+C:\Users\webadm\workspace\CPlusNet/BaseObject.h:
 
 C:\Users\webadm\workspace\CPlusNet/include/StdString.h:
 

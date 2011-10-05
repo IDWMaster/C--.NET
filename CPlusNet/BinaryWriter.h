@@ -10,7 +10,7 @@ to indicate your contribution to the project.
 #define BINARYWRITER_H
 #include <string>
 #include "Stream.h"
-#include "include/StdString.h"
+#include "StdString.h"
 #include "Array.h"
 namespace System {
     namespace IO {

@@ -5,7 +5,7 @@ code. This may perhaps be the world's biggest C++ abstraction library
 Contributions are welcome. Place your name and your contribution below this line
 to indicate your contribution to the project.
 */
-#include "include/stdstring.h"
+#include "stdstring.h"
 #ifndef EXCEPTION_H
 #define EXCEPTION_H
 

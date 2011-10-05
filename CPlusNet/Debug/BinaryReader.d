@@ -1,6 +1,6 @@
 BinaryReader.d BinaryReader.o: ../BinaryReader.cpp ../BinaryReader.h \
- ../Stream.h ../Exception.h ../include/stdstring.h ../Array.h \
- ../CProperty.h
+ ../Stream.h ../Exception.h ../stdstring.h ../Array.h ../CProperty.h \
+ ../BaseObject.h
 
 ../BinaryReader.h:
 
@@ -8,8 +8,10 @@ BinaryReader.d BinaryReader.o: ../BinaryReader.cpp ../BinaryReader.h \
 
 ../Exception.h:
 
-../include/stdstring.h:
+../stdstring.h:
 
 ../Array.h:
 
 ../CProperty.h:
+
+../BaseObject.h:

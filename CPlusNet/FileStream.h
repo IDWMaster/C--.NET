@@ -6,7 +6,7 @@ Contributions are welcome. Place your name and your contribution below this line
 to indicate your contribution to the project.
 */
 #include "Stream.h"
-#include "include/StdString.h"
+#include "StdString.h"
 #include <stdlib.h>
 #ifndef FILESTREAM_H
 #define FILESTREAM_H

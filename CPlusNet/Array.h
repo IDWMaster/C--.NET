@@ -13,6 +13,8 @@ to indicate your contribution to the project.
 #include <malloc.h>
 #pragma once
 #include <stdlib.h>
+//Why on Earth is memcpy declared in string.h?
+#include <string.h>
 template <class T>
 class Array
 {
@@ -23,7 +25,8 @@ class Array
     delete[] internarray;
 	//TODO: Need feedback here. Should I use delete[], or delete? Since this was allocated with new[]?
 	//I know it's usually recommended, but this has been cast to int*, so is it still necessary?
-	delete refcount;
+	//See also; BaseObject (same problem there)
+    delete refcount;
 	} else {
 	*refcount-=1;
 	}
@@ -32,7 +35,7 @@ class Array
         Array<T>(int elements) {
             internarray = (T*)malloc(elements*sizeof(T));
             Length = elements;
-			refcount = (int*)new byte[sizeof(int)];
+			refcount = (int*)malloc(sizeof(int));
 			*refcount = 0;
         }
 		//Create shallow copy (increment reference)
@@ -49,7 +52,7 @@ class Array
             Length = sizeof(existingarray);
             internarray = new T[sizeof(existingarray)/sizeof(T)];
 			memcpy(internarray,existingarray,sizeof(internarray));
-			refcount = (int*)new byte[sizeof(int)];
+			refcount = (int*)malloc(sizeof(int));
 			*refcount = 0;
         }
         T operator[] (int index) {

@@ -6,10 +6,12 @@ Contributions are welcome. Place your name and your contribution below this line
 to indicate your contribution to the project.
 */
 
-#include <include/StdString.h>
+#include <StdString.h>
 #include <FileStream.h>
 #include <BinaryWriter.h>
 #include <stream.h>
 #include <RThread.h>
 #include <console.h>
 #include <BinaryReader.h>
+#include <BaseObject.h>
+#include <Assembly.h>

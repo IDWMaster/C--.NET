@@ -6,17 +6,17 @@ Contributions are welcome. Place your name and your contribution below this line
 to indicate your contribution to the project.
 */
 #include "FileStream.h"
-#include "include/StdString.h"
+#include "StdString.h"
 #include <stdio.h>
 
+FileStream::~FileStream() {
+	fclose(fpointer);
+}
 long FileStream::GetLen() {
 fseek(fpointer,0,SEEK_END);
 flen = (long)ftell(fpointer);
 fseek(fpointer,ipos,SEEK_SET);
 return flen;
-}
-FileStream::~FileStream() {
-fclose(fpointer);
 }
 void FileStream::SetLen(long value) {
 //TODO: Currently not implemented

@@ -9,4 +9,5 @@ Stream::Stream()
 Stream::~Stream()
 {
     //dtor
+
 }

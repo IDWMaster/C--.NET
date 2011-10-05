@@ -1,8 +1,8 @@
-Console.d Console.o: ../Console.cpp ../Console.h ../include/stdstring.h \
+Console.d Console.o: ../Console.cpp ../Console.h ../stdstring.h \
  ../Array.h
 
 ../Console.h:
 
-../include/stdstring.h:
+../stdstring.h:
 
 ../Array.h:

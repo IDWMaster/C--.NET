@@ -1,12 +1,14 @@
 Stream.d Stream.o: ../Stream.cpp ../Stream.h ../Exception.h \
- ../include/stdstring.h ../Array.h ../CProperty.h
+ ../stdstring.h ../Array.h ../CProperty.h ../BaseObject.h
 
 ../Stream.h:
 
 ../Exception.h:
 
-../include/stdstring.h:
+../stdstring.h:
 
 ../Array.h:
 
 ../CProperty.h:
+
+../BaseObject.h:
