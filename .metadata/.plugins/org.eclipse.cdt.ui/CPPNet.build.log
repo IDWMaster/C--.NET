@@ -1,0 +1,22 @@
+
+**** Build of configuration Debug for project CPPNet ****
+
+make all 
+Building file: ../StreamWriter.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"StreamWriter.d" -MT"StreamWriter.d" -o "StreamWriter.o" "../StreamWriter.cpp"
+Finished building: ../StreamWriter.cpp
+ 
+Building file: ../Thread.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Thread.d" -MT"Thread.d" -o "Thread.o" "../Thread.cpp"
+Finished building: ../Thread.cpp
+ 
+Building target: libCPPNet.a
+Invoking: GCC Archiver
+ar -r  "libCPPNet.a"  ./Assembly.o ./BinaryReader.o ./BinaryWriter.o ./Console.o ./FileStream.o ./RThread.o ./StdString.o ./Stream.o ./StreamWriter.o ./Thread.o   
+C:\MinGW\bin\ar.exe: creating libCPPNet.a
+Finished building target: libCPPNet.a
+ 
+
+**** Build Finished ****

@@ -14,7 +14,6 @@ to indicate your contribution to the project.
 
 #include "StreamWriter.h"
 #include "Array.h"
-#include <thread>
 namespace System {
 namespace IO {
 void StreamWriter::Initialize() {
