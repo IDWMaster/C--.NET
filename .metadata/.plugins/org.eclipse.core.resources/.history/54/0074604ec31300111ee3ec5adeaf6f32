@@ -1,0 +1,23 @@
+//============================================================================
+// Name        : SampleApplication.cpp
+// Author      : Brian Bosak
+// Version     : 0.1
+// Copyright   : Copyleft 2011 Brian Bosak - Some rights reserved
+//============================================================================
+
+
+#include <CLRHeader.h>
+#include <FileStream.h>
+#include <unicode/utypes.h>
+using namespace System;
+using namespace System::IO;
+int main() {
+	Console::WriteLine("Hello world!");
+	Console::WriteLine("test");
+	FileStream* mstr = new FileStream("test");
+	BinaryWriter* mwriter = new BinaryWriter(mstr);
+	mwriter->Write("Hello world!");
+	mstr->Flush();
+
+	return 0;
+}

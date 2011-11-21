@@ -1,0 +1,18 @@
+#
+#Sun Nov 20 13:23:49 CST 2011
+Assembly.h=1
+CProperty.h=1
+Release/SampleApplication.o=1
+BinaryReader.h=1
+StdString.h=1
+SampleApplication.cpp=1
+Release/SampleApplication.exe=1
+Thread.h=1
+BinaryWriter.h=1
+Exception.h=1
+BaseObject.h=1
+FileStream.h=1
+Array.h=1
+RThread.h=1
+Stream.h=1
+CLRHeader.h=1
