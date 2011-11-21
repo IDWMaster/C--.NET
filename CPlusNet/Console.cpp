@@ -8,8 +8,9 @@ to indicate your contribution to the project.
 #include "Console.h"
 #include <stdio.h>
 #include "Array.h"
+#include <iostream>
 void Console::Write(StdString text) {
-printf(text.cstr());
+std::cout<<text.rstr();
 }
 using namespace std;
 StdString Console::ReadLine() {
@@ -19,12 +20,12 @@ while(true) {
 recententry = getchar();
 
 if(recententry == '\r' || recententry == '\n') {
-return retval;
+break;
 }
 retval+=recententry;
 }
-
+return retval;
 }
 void Console::WriteLine(StdString text) {
-printf((char*)(text+"\n").cstr());
+printf((text+"\n").rstr());
 }

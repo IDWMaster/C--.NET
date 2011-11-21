@@ -42,12 +42,11 @@ StdString BinaryReader::ReadString() {
 
 	Array<byte> data = new byte[sizeof(int)];
 	underlyingstream->Read(data,0,sizeof(int));
-int len = *(int*)(data.internarray);
-data.Resize(sizeof(char)*len);
+int32_t len = *(int32_t*)(data.internarray);
+data.Resize(sizeof(UChar)*len);
 
 underlyingstream->Read(data,0,data.Length);
-return "NULL";
-StdString retval = (char*)data.internarray;
+StdString retval = (UChar*)data.internarray;
 
 return retval;
 }

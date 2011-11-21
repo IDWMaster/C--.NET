@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="completion_proposal_size">
 	</section>
+	<section name="NewClassWizardPage">
+	</section>
 	<section name="org.eclipse.cdt.ui.text.hover.CMacroExpansionExploration">
 	</section>
 </section>

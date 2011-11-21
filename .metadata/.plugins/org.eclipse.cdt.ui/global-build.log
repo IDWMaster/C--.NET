@@ -1,13 +1,39 @@
 
-**** Build of configuration Debug for project CPlusNet ****
+**** Build of configuration Debug for project SampleApplication ****
 
-**** Internal Builder is used for build               ****
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o FileStream.o ..\FileStream.cpp
-..\FileStream.cpp: In member function 'virtual void FileStream::Write(Array<unsigned char>, int, int)':
-..\FileStream.cpp:47:5: warning: unused variable 'dbg'
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o StreamWriter.o ..\StreamWriter.cpp
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o Stream.o ..\Stream.cpp
-ar -r libCPlusNet.a Thread.o StreamWriter.o Stream.o StdString.o RThread.o FileStream.o Console.o BinaryWriter.o BinaryReader.o Assembly.o
-ar: creating libCPlusNet.a
-Build complete for project CPlusNet
-Time consumed: 835  ms.  
+make all 
+Building file: ../SampleApplication.cpp
+Invoking: GCC C++ Compiler
+g++ -I"C:\Users\Brian Bosak\Desktop\CPlusNet\CPlusNet" -I"C:\msys\1.0\local\include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SampleApplication.d" -MT"SampleApplication.d" -o "SampleApplication.o" "../SampleApplication.cpp"
+Finished building: ../SampleApplication.cpp
+ 
+Building target: SampleApplication.exe
+Invoking: MinGW C++ Linker
+g++ -L"C:\Users\Brian Bosak\Desktop\CPlusNet\CPlusNet\Debug" -L../../icu/lib -o "SampleApplication.exe"  ./SampleApplication.o   -lCplusNet -licuuc
+Finished building target: SampleApplication.exe
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SampleApplication ****
+
+make all 
+make: Nothing to be done for `all'.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project SampleApplication ****
+
+make all 
+Building file: ../SampleApplication.cpp
+Invoking: GCC C++ Compiler
+g++ -I"C:\Users\Brian Bosak\Desktop\CPlusNet\CPlusNet" -I"C:\msys\1.0\local\include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SampleApplication.d" -MT"SampleApplication.d" -o "SampleApplication.o" "../SampleApplication.cpp"
+Finished building: ../SampleApplication.cpp
+ 
+Building target: SampleApplication.exe
+Invoking: MinGW C++ Linker
+g++ -L"C:\Users\Brian Bosak\Desktop\CPlusNet\CPlusNet\Debug" -L../../icu/lib -o "SampleApplication.exe"  ./SampleApplication.o   -lCplusNet -licuuc
+Finished building target: SampleApplication.exe
+ 
+
+**** Build Finished ****

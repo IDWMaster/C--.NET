@@ -20,7 +20,13 @@ public:
 
 	}
 	T* GetObject() {
+	return nativeobject;
+	}
+	T *operator->() {
 		return nativeobject;
+	}
+	T &operator*() {
+return *nativeobject;
 	}
 	///Copy constructor
 	BaseObject<T>(const BaseObject<T>& copy) {

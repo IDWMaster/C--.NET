@@ -19,8 +19,8 @@ int len = text.Length();
 //Take the pointer to the int with sizeof(int)
 byte* header = (byte*)&len;
 byte* data = (byte*)text.cstr();
-underlyingstream->Write(header,0,sizeof(int));
-underlyingstream->Write(data,0,sizeof(char)*len);
+underlyingstream->Write(header,0,sizeof(int32_t));
+underlyingstream->Write(data,0,sizeof(UChar)*len);
 
 }
 void BinaryWriter::Write(int value) {

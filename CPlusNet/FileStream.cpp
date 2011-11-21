@@ -8,7 +8,7 @@ to indicate your contribution to the project.
 #include "FileStream.h"
 #include "StdString.h"
 #include <stdio.h>
-
+#include "Console.h"
 FileStream::~FileStream() {
 	fclose(fpointer);
 }
@@ -45,7 +45,6 @@ return retval;
 void FileStream::Write(Array<byte> data, int offset, int count) {
 
 int dbg = fwrite(data.internarray+(size_t)offset,(size_t)1,(size_t)count,fpointer);
-
 ipos +=count;
 if(ipos>flen) {
 flen = ipos;
@@ -56,6 +55,8 @@ fflush(fpointer);
 }
 FileStream::FileStream(StdString filename) {
     ipos = 0;
- fpointer = fopen(filename.cstr(),"r+b");
+    Console::WriteLine("fopen");
+Console::WriteLine(StdString("Opening ")+filename);
+ fpointer = fopen(filename.rstr(),"r+b");
     GetLen();
 }

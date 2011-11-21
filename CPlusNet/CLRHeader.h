@@ -9,9 +9,9 @@ to indicate your contribution to the project.
 #include <StdString.h>
 #include <FileStream.h>
 #include <BinaryWriter.h>
-#include <stream.h>
+#include <Stream.h>
 #include <RThread.h>
-#include <console.h>
+#include <Console.h>
 #include <BinaryReader.h>
 #include <BaseObject.h>
 #include <Assembly.h>
