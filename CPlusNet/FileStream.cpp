@@ -14,7 +14,7 @@ FileStream::~FileStream() {
 }
 long FileStream::GetLen() {
 fseek(fpointer,0,SEEK_END);
-flen = (long)ftell(fpointer);
+flen = long(ftell(fpointer));
 fseek(fpointer,ipos,SEEK_SET);
 return flen;
 }
@@ -30,21 +30,22 @@ ipos = value;
 fseek(fpointer,value,SEEK_SET);
 }
 int FileStream::Read(Array<byte> data, int offset, int count) {
-int available;
+size_t available;
 if(flen-ipos<count) {
 
-available = flen;
+available = flen-ipos;
 } else {
 available = count;
 }
-int retval = (int)fread(data.internarray.data()+(size_t)offset,(size_t)1,(size_t)available,fpointer);
+
+int retval = (int)fread(data.GetArray()+(size_t)offset,(size_t)1,available,fpointer);
 ipos = ftell(fpointer);
 
 return retval;
 }
 void FileStream::Write(Array<byte> data, int offset, int count) {
 
-int dbg = fwrite(data.internarray.data()+(size_t)offset,(size_t)1,(size_t)count,fpointer);
+int dbg = fwrite(data.GetArray()+(size_t)offset,(size_t)1,(size_t)count,fpointer);
 ipos +=count;
 if(ipos>flen) {
 flen = ipos;

@@ -34,9 +34,10 @@ class FileStream : public System::IO::Stream
         void SetPos(long value);
         /** Default destructor */
         ~FileStream();
+        ///The raw pointer to the file
+        FILE* fpointer;
     protected:
     private:
-    FILE* fpointer;
     int flen;
     void updatelen();
     long ipos;

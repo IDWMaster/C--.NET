@@ -17,36 +17,34 @@ BinaryReader::BinaryReader(Stream* stream)
 int BinaryReader::ReadInt32() {
 Array<byte> data = Array<byte>(new byte[sizeof(int)],sizeof(int));
 underlyingstream->Read(data,0,data.Length);
-int retval = *(int*)(void*)data.internarray.data();
+int retval = *(int*)(void*)data.GetArray();
 return retval;
 }
 long BinaryReader::ReadInt64() {
 Array<byte> data = Array<byte>(new byte[sizeof(long)],sizeof(long));
 underlyingstream->Read(data,0,data.Length);
-long retval = *(long*)data.internarray.data();
+long retval = *(long*)data.GetArray();
 return retval;
 }
 float BinaryReader::ReadFloat() {
 Array<byte> data = Array<byte>(new byte[sizeof(float)],sizeof(float));
 underlyingstream->Read(data,0,data.Length);
-float retval = *(float*)data.internarray.data();
+float retval = *(float*)data.GetArray();
 return retval;
 }
 double BinaryReader::ReadDouble() {
 Array<byte> data = Array<byte>(new byte[sizeof(double)],sizeof(double));
 underlyingstream->Read(data,0,data.Length);
-double retval = *(double*)data.internarray.data();
+double retval = *(double*)data.GetArray();
 return retval;
 }
 StdString BinaryReader::ReadString() {
 
-	Array<byte> data = Array<byte>(new byte[sizeof(int)],sizeof(int));
-	underlyingstream->Read(data,0,sizeof(int));
-int32_t len = *(int32_t*)(data.internarray.data());
-data.Resize(sizeof(UChar)*len);
+	int32_t len = ReadInt32();
+Array<byte> data = Array<byte>((sizeof(UChar)*len));
 
 underlyingstream->Read(data,0,data.Length);
-StdString retval = (UChar*)data.internarray.data();
+StdString retval = (UChar*)data.GetArray();
 
 return retval;
 }

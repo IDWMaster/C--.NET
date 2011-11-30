@@ -15,6 +15,7 @@ class Console
         /** Default constructor */
        static void Write(StdString text);
        static void WriteLine(StdString text);
+       static void Write(int value);
        static StdString ReadLine();
     protected:
     private:

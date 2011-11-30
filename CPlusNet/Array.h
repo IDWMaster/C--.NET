@@ -20,7 +20,10 @@ template <class T>
 class Array
 {
     public:
-
+	//Gets the internal data buffer
+	T* GetArray() {
+	return &(*internarray)[0];
+	}
     ~Array() {
         //Delete all elements in the underlying array (especially important if this instance was created with the 'new' keyword)
 	if(*refcount == 0) {
@@ -34,8 +37,12 @@ class Array
 	}
     }
         /** Default constructor */
-        Array<T>(long elements) {
-            internarray = std::vector<T>();
+        Array<T>(int elements) {
+        	T* elems = new T[elements];
+
+        	//Initialize array from memory
+            internarray = new std::vector<T>(elems,elems+(elements*sizeof(T)));
+            memset(&(*internarray)[0],0,elements*sizeof(T));
             Length = elements;
 			refcount = (int*)malloc(sizeof(int));
 			*refcount = 0;
@@ -50,9 +57,9 @@ class Array
         //**The length of the array (in elements) */
         long Length;
         /** Creates a wrapper around an existing array, and memcpys it into this new array!*/
-        Array<T>(T* existingarray, long len) {
-            Length = len;
-            internarray = std::vector<T>(existingarray,existingarray+len);
+        Array<T>(T* existingarray, long elems) {
+            Length = elems;
+            internarray = new std::vector<T>(existingarray,existingarray+(elems*sizeof(T)));
 
 			refcount = (int*)malloc(sizeof(int));
 			*refcount = 0;
@@ -61,15 +68,16 @@ class Array
             return internarray[index];
         }
         void Resize(long elements) {
-        	internarray.reserve(elements);
+        	Length = elements;
+        	internarray->reserve(elements);
 
         }
         //The internal data buffer
-        std::vector<T> internarray;
+
     protected:
     private:
 		int* refcount;
-
+		std::vector<T>* internarray;
 };
 
 #endif // ARRAY_H

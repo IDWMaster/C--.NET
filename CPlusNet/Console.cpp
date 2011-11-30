@@ -13,6 +13,9 @@ void Console::Write(StdString text) {
 std::cout<<text.rstr();
 }
 using namespace std;
+void Console::Write(int val) {
+	std::cout<<val;
+}
 StdString Console::ReadLine() {
 char recententry;
 StdString retval;

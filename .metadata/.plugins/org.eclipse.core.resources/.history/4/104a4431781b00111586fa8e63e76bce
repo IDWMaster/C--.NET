@@ -1,0 +1,25 @@
+//============================================================================
+// Name        : SampleApplication.cpp
+// Author      : Brian Bosak
+// Version     : 0.1
+// Copyright   : Copyleft 2011 Brian Bosak - Some rights reserved
+//============================================================================
+
+
+#include <CLRHeader.h>
+#include <FileStream.h>
+
+using namespace System;
+using namespace System::IO;
+int main() {
+	StdString sampletext = "Opening file...\0";
+Array<byte> mtest = Array<byte>((byte*)sampletext.cstr(),sampletext.Length()*sizeof(UChar));
+//mtest.GetArray()[0] = 8;
+Console::WriteLine((UChar*)mtest.GetArray());
+
+	FileStream* mstr = new FileStream("hi.txt");
+	Array<byte>* mray = new Array<byte>(mstr->GetLen());
+	mstr->Read(*mray,0,mray->Length);
+	Console::WriteLine((UChar*)*mray)
+	return 0;
+}
