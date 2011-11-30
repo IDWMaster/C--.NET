@@ -11,17 +11,14 @@
 using namespace System;
 using namespace System::IO;
 int main() {
-	StdString testring = StdString("Hello world!").cstr();
-	Console::WriteLine(testring);
+
+
 	FileStream* mstr = new FileStream("hi.txt");
 
 
-	//This doesn't work
-	//Array<byte> mray = Array<byte>((byte*)testring.cstr(),testring.Length()*sizeof(UChar));
-//	mstr->Write(mray,0,testring.Length()*sizeof(UChar));
-	//This works; but it's politically incorrect
-	char* mt = (char*)"Hello world!";
-	mstr->Write(Array<byte>((byte*)mt,sizeof(char)*12),0,sizeof(char)*12);
 
+	StdString testring = StdString("Hello world!").cstr();
+	UChar* mt = testring.cstr();
+	mstr->Write(Array<byte>((byte*)mt,testring.Length()*sizeof(UChar)),0,testring.Length()*sizeof(UChar));
 	return 0;
 }
