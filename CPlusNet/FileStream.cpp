@@ -55,7 +55,7 @@ fflush(fpointer);
 }
 FileStream::FileStream(StdString filename) {
     ipos = 0;
-    Console::WriteLine("fopen");
+
 Console::WriteLine(StdString("Opening ")+filename);
  fpointer = fopen(filename.rstr(),"r+b");
     GetLen();

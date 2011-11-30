@@ -19,31 +19,31 @@ int len = text.Length();
 //Take the pointer to the int with sizeof(int)
 byte* header = (byte*)&len;
 byte* data = (byte*)text.cstr();
-underlyingstream->Write(header,0,sizeof(int32_t));
-underlyingstream->Write(data,0,sizeof(UChar)*len);
+underlyingstream->Write(Array<byte>(header,sizeof(int)),0,sizeof(int32_t));
+underlyingstream->Write(Array<byte>(data,sizeof(UChar)*len),0,sizeof(UChar)*len);
 
 }
 void BinaryWriter::Write(int value) {
 byte* data = (byte*)(void*)&value;
-underlyingstream->Write(data,0,sizeof(int));
+underlyingstream->Write(Array<byte>(data,sizeof(int)),0,sizeof(int));
 }
 void BinaryWriter::Write(long value) {
 byte* data = (byte*)&value;
-underlyingstream->Write(data,0,sizeof(long));
+underlyingstream->Write(Array<byte>(data,sizeof(long)),0,sizeof(long));
 
 }
 void BinaryWriter::Write(float value) {
 byte* data = (byte*)&value;
-underlyingstream->Write(data,0,sizeof(float));
+underlyingstream->Write(Array<byte>(data,sizeof(float)),0,sizeof(float));
 
 }
 void BinaryWriter::Write(double value) {
 byte* data = (byte*)&value;
-underlyingstream->Write(data,0,sizeof(double));
+underlyingstream->Write(Array<byte>(data,sizeof(double)),0,sizeof(double));
 
 }
 void BinaryWriter::Write(Array<byte> value) {
-underlyingstream->Write(value.internarray,0,value.Length);
+underlyingstream->Write(value,0,value.Length);
 }
 BinaryWriter::~BinaryWriter()
 {

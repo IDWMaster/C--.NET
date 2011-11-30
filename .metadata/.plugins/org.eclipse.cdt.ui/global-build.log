@@ -18,13 +18,6 @@ Finished building target: SampleApplication.exe
 **** Build of configuration Debug for project SampleApplication ****
 
 make all 
-make: Nothing to be done for `all'.
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project SampleApplication ****
-
-make all 
 Building file: ../SampleApplication.cpp
 Invoking: GCC C++ Compiler
 g++ -I"C:\Users\Brian Bosak\Desktop\CPlusNet\CPlusNet" -I"C:\msys\1.0\local\include" -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SampleApplication.d" -MT"SampleApplication.d" -o "SampleApplication.o" "../SampleApplication.cpp"

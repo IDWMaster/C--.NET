@@ -1643,3 +1643,13 @@ java.io.IOException: Pipe closed
 	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
 	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
 	at java.lang.Thread.run(Unknown Source)
+!SESSION 2011-11-29 20:33:05.748 -----------------------------------------------
+eclipse.buildId=M20110909-1335
+java.version=1.6.0_29
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.epp.usagedata.recording 1 0 2011-11-29 20:34:29.198
+!MESSAGE Usage data uploaded to http://udc.eclipse.org/upload.php in 3418 milliseconds.

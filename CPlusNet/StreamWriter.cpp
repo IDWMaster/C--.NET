@@ -32,13 +32,13 @@ internstream = str;
 }
 void StreamWriter::Write(StdString text) {
 
-Array<byte> data = (byte*)text.cstr();
+Array<byte> data = Array<byte>((byte*)text.cstr(),text.Length()*sizeof(UChar));
 internstream->Write(data,0,data.Length);
 }
 void StreamWriter::WriteLine(StdString text) {
 	StdString copy = text;
 		copy.AppendLineBreak();
-		Array<byte> data = (byte*)text.cstr();
+		Array<byte> data = Array<byte>((byte*)copy.cstr(),copy.Length()*sizeof(UChar));
 		internstream->Write(data,0,data.Length);
 
 }

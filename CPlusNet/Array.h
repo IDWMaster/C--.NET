@@ -32,7 +32,7 @@ class Array
 	}
     }
         /** Default constructor */
-        Array<T>(int elements) {
+        Array<T>(long elements) {
             internarray = (T*)malloc(elements*sizeof(T));
             Length = elements;
 			refcount = (int*)malloc(sizeof(int));
@@ -48,8 +48,8 @@ class Array
         //**The length of the array (in elements) */
         long Length;
         /** Creates a wrapper around an existing array, and memcpys it into this new array!*/
-        Array<T>(T* existingarray) {
-            Length = sizeof(existingarray);
+        Array<T>(T* existingarray, long len) {
+            Length = len;
             internarray = new T[sizeof(existingarray)/sizeof(T)];
 			memcpy(internarray,existingarray,sizeof(internarray));
 			refcount = (int*)malloc(sizeof(int));
