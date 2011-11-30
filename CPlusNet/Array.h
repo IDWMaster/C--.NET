@@ -50,8 +50,8 @@ class Array
         /** Creates a wrapper around an existing array, and memcpys it into this new array!*/
         Array<T>(T* existingarray, long len) {
             Length = len;
-            internarray = new T[sizeof(existingarray)/sizeof(T)];
-			memcpy(internarray,existingarray,sizeof(internarray));
+            internarray = new T[len];
+			memcpy(internarray,existingarray,len*sizeof(T));
 			refcount = (int*)malloc(sizeof(int));
 			*refcount = 0;
         }
