@@ -2,21 +2,6 @@
 **** Build of configuration Debug for project CPlusNet ****
 
 make all 
-Building file: ../BinaryReader.cpp
-Invoking: GCC C++ Compiler
-g++ -I../../icu/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BinaryReader.d" -MT"BinaryReader.d" -o "BinaryReader.o" "../BinaryReader.cpp"
-Finished building: ../BinaryReader.cpp
- 
-Building file: ../BinaryWriter.cpp
-Invoking: GCC C++ Compiler
-g++ -I../../icu/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"BinaryWriter.d" -MT"BinaryWriter.d" -o "BinaryWriter.o" "../BinaryWriter.cpp"
-Finished building: ../BinaryWriter.cpp
- 
-Building file: ../Console.cpp
-Invoking: GCC C++ Compiler
-g++ -I../../icu/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"Console.d" -MT"Console.d" -o "Console.o" "../Console.cpp"
-Finished building: ../Console.cpp
- 
 Building file: ../FileStream.cpp
 Invoking: GCC C++ Compiler
 g++ -I../../icu/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"FileStream.d" -MT"FileStream.d" -o "FileStream.o" "../FileStream.cpp"

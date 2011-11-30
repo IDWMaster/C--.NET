@@ -37,14 +37,14 @@ available = flen;
 } else {
 available = count;
 }
-int retval = (int)fread(data.internarray+(size_t)offset,(size_t)1,(size_t)available,fpointer);
+int retval = (int)fread(data.internarray.data()+(size_t)offset,(size_t)1,(size_t)available,fpointer);
 ipos = ftell(fpointer);
 
 return retval;
 }
 void FileStream::Write(Array<byte> data, int offset, int count) {
 
-int dbg = fwrite(data.internarray+(size_t)offset,(size_t)1,(size_t)count,fpointer);
+int dbg = fwrite(data.internarray.data()+(size_t)offset,(size_t)1,(size_t)count,fpointer);
 ipos +=count;
 if(ipos>flen) {
 flen = ipos;
