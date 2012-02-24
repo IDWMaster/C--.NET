@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Move 1 resources to &apos;Threading&apos;" description="Move 1 resources to &apos;Threading&apos;" destination="/Threading" element1="/CoreTypes/ThreadPool.h" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1328803847856" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;Threading/clib&apos; to &apos;clib.cpp&apos;" description="Rename resource &apos;clib&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="clib" name="clib.cpp" stamp="1328805117100" updateReferences="true"/>
+</session>

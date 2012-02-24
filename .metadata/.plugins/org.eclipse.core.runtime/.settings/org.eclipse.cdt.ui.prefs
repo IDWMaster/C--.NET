@@ -1,7 +1,7 @@
-#Sun Nov 20 13:27:50 CST 2011
+#Thu Feb 09 10:32:40 CST 2012
 spelling_locale_initialized=true
 useAnnotationsPrefPage=true
 content_assist_disabled_computers=org.eclipse.cdt.ui.parserProposalCategory\u0000org.eclipse.cdt.ui.textProposalCategory\u0000
 eclipse.preferences.version=1
-content_assist_autoactivation_delay=200
+sourceHoverBackgroundColor=255,255,225
 useQuickDiffPrefPage=true

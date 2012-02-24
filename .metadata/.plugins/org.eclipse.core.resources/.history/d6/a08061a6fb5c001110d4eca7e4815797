@@ -1,0 +1,89 @@
+/*
+ * Dictionary.h
+ *
+ *  Created on: Jan 11, 2012
+ *      Author: webadm
+ */
+
+#ifndef DICTIONARY_H_
+#define DICTIONARY_H_
+#include "Array.h"
+namespace System {
+template<class X, class Y>
+class Dictionary:RefcountedObject {
+//private:
+//	void* operator new(size_t size, MemAllocator* actr) {
+//		return actr->allocMem(size);
+//	}
+public:
+	Array<X>* keys;
+	Array<Y>* values;
+	Dictionary(MemAllocator* aloc):RefcountedObject(aloc) {
+	//	keys = new(aloc) Array<X>(0,aloc);
+	//	values = new(aloc) Array<Y>(0,aloc);
+	keys = (Array<X>*)aloc->allocMem(sizeof(Array<X>));
+	values = (Array<Y>*)aloc->allocMem(sizeof(Array<Y>));
+	*keys = Array<X>(0,aloc);
+	*values = Array<Y>(0,aloc);
+	}
+	void Add(X key, X value) {
+		keys->Resize((*(keys->length))+1);
+		values->Resize((*(values->length))+1);
+		(*keys)[keys->length-1] = key;
+		(*values)[(*(values->length))-1] = value;
+
+	}
+	bool Contains(X key) {
+		for(int32_t i = 0;i<(*(keys->length));i++) {
+				   if((*keys)[i] == key) {
+					   return true;
+				   }
+		}
+		return false;
+	}
+	void Remove(X key) {
+		for(int32_t i = 0;i<keys->length;i++) {
+			if(keys[i] == key) {
+				//TODO: Somehow remove this value, and re-sort the array
+				Array<X> removedarray(keys->length-1,allocator);
+				int32_t y = 0;
+				for(int32_t x = 0;x<keys->length;x++) {
+
+					if(x != i) {
+						removedarray[y] = keys[x];
+						y++;
+					}
+				}
+				*keys = removedarray;
+				Array<Y> secondremovedarray(values->length-1,allocator);
+				y = 0;
+				for(int32_t x = 0;x<values->length;x++) {
+
+									if(x != i) {
+										secondremovedarray[y] = values[x];
+										y++;
+									}
+				}
+			}
+		}
+	}
+	Y& operator[](X val) {
+	   for(int32_t i = 0;i<keys->length;i++) {
+		   if((*keys)[i] == val) {
+			   return (*values)[i];
+		   }
+	   }
+	   keys->Resize(keys->length+1);
+	   		values->Resize(values->length+1);
+	   		(*keys)[keys->length-1] = val;
+	   		return (*values)[values->length-1];
+	}
+	void Destroy() {
+		allocator->unallocMem(keys);
+		allocator->unallocMem(values);
+	}
+};
+}
+
+
+#endif /* DICTIONARY_H_ */

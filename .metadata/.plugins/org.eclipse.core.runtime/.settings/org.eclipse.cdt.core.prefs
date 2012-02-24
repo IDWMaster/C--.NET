@@ -1,18 +1,14 @@
-#Sun Nov 20 13:50:45 CST 2011
+#Thu Feb 09 10:32:40 CST 2012
 indexer/indexerId=org.eclipse.cdt.core.fastIndexer
-indexer/skipImplicitReferences=false
 indexer/indexUnusedHeadersWithDefaultLang=true
-environment/workspace=
+indexer/skipImplicitReferences=false
 indexer/updatePolicy=0
 indexer/filesToParseUpFront=cstdarg, stdarg.h, stddef.h, sys/resource.h, ctime, sys/types.h, signal.h, cstdio
-environment/workspace/appendContributed=true
 indexer/skipTypeReferences=false
 indexer/indexOnOpen=true
 indexer/skipReferences=false
-macros/workspace=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<macros/>\r\n
 indexer/skipMacroReferences=false
 indexer/indexAllFiles=true
 eclipse.preferences.version=1
-environment/workspace/append=true
 indexer/skipFilesLargerThanMB=8
 indexer/useHeuristicIncludeResolution=true

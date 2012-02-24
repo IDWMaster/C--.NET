@@ -1,3 +1,10 @@
+Build prerequisites:
+* GCC
+* MSVCC (broken support; use only if you have to)
+* Boost (can be acquired from Boost.org)
+
+
+
 To build, use the makefile in the Debug folder of either project. On Windows, this can be done with the minimal installation of MingW and the C++ compiler.
 
 

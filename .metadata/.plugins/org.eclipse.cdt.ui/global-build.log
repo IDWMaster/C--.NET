@@ -1,16 +1,153 @@
 
-**** Build of configuration Debug for project SampleApplication ****
+**** Build of configuration Debug for project TestApp ****
 
-make all 
-Building file: ../SampleApplication.cpp
-Invoking: GCC C++ Compiler
-g++ -I"C:\Users\webadm\Desktop\CPlusNet\CPlusNet" -I"C:\msys\1.0\local\include" -I../../icu/include -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"SampleApplication.d" -MT"SampleApplication.d" -o "SampleApplication.o" "../SampleApplication.cpp"
-Finished building: ../SampleApplication.cpp
- 
-Building target: SampleApplication.exe
-Invoking: MinGW C++ Linker
-g++ -L"C:\Users\webadm\Desktop\CPlusNet\CPlusNet\Debug" -L../../icu/lib -o "SampleApplication.exe"  ./SampleApplication.o   -lCplusNet -licuuc
-Finished building target: SampleApplication.exe
- 
+**** Internal Builder is used for build               ****
+Nothing to build for TestApp
 
-**** Build Finished ****
+**** Rebuild of configuration Debug for project TestApp ****
+
+**** Internal Builder is used for build               ****
+g++ -IC:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\CoreTypes -IC:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\Threading -O0 -g3 -Wall -c -fmessage-length=0 -o src\TestApp.o ..\src\TestApp.cpp
+In file included from C:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\CoreTypes/RefcountedObject.h:11:0,
+                 from C:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\Threading/Thread.h:11,
+                 from C:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\Threading/ThreadPool.h:10,
+                 from ..\src\TestApp.cpp:10:
+C:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\CoreTypes/mempool.h:11:0: warning: "platformptr" redefined [enabled by default]
+C:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\CoreTypes/defs.h:10:0: note: this is the location of the previous definition
+In file included from C:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\CoreTypes/RefcountedObject.h:11:0,
+                 from C:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\Threading/Thread.h:11,
+                 from C:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\Threading/ThreadPool.h:10,
+                 from ..\src\TestApp.cpp:10:
+C:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\CoreTypes/mempool.h: In destructor 'MemAllocator::~MemAllocator()':
+C:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\CoreTypes/mempool.h:36:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+C:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\CoreTypes/mempool.h: In member function 'void MemAllocator::unallocMem(void*)':
+C:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\CoreTypes/mempool.h:63:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+C:\Users\Brian Bosak\Desktop\CProjects\ModernPlusPlus\CoreTypes/mempool.h:69:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+..\src\TestApp.cpp: In function 'int main()':
+..\src\TestApp.cpp:19:6: warning: unused variable 'r' [-Wunused-variable]
+g++ -o TestApp.exe src\TestApp.o
+Build complete for project TestApp
+Time consumed: 9467  ms.  
+
+**** Build of configuration Debug for project TestApp ****
+
+**** Internal Builder is used for build               ****
+g++ -IC:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes -IC:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading -O0 -g3 -Wall -c -fmessage-length=0 -o src\TestApp.o ..\src\TestApp.cpp
+In file included from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/RefcountedObject.h:11:0,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/Thread.h:11,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:10,
+                 from ..\src\TestApp.cpp:10:
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:11:0: warning: "platformptr" redefined [enabled by default]
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/defs.h:10:0: note: this is the location of the previous definition
+In file included from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/RefcountedObject.h:11:0,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/Thread.h:11,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:10,
+                 from ..\src\TestApp.cpp:10:
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h: In destructor 'MemAllocator::~MemAllocator()':
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:36:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h: In member function 'void MemAllocator::unallocMem(void*)':
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:63:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:69:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o TestApp.exe src\TestApp.o
+Build complete for project TestApp
+Time consumed: 17882  ms.  
+
+**** Build of configuration Debug for project TestApp ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for TestApp
+
+**** Build of configuration Debug for project TestApp ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for TestApp
+
+**** Build of configuration Debug for project TestApp ****
+
+**** Internal Builder is used for build               ****
+g++ -IC:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes -IC:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading -O0 -g3 -Wall -c -fmessage-length=0 -o src\TestApp.o ..\src\TestApp.cpp
+In file included from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/RefcountedObject.h:11:0,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/Thread.h:11,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:10,
+                 from ..\src\TestApp.cpp:10:
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:11:0: warning: "platformptr" redefined [enabled by default]
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/defs.h:10:0: note: this is the location of the previous definition
+In file included from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/RefcountedObject.h:11:0,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/Thread.h:11,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:10,
+                 from ..\src\TestApp.cpp:10:
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h: In destructor 'MemAllocator::~MemAllocator()':
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:36:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h: In member function 'void MemAllocator::unallocMem(void*)':
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:63:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:69:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+g++ -o TestApp.exe src\TestApp.o
+Build complete for project TestApp
+Time consumed: 7948  ms.  
+
+**** Build of configuration Debug for project TestApp ****
+
+**** Internal Builder is used for build               ****
+Nothing to build for TestApp
+
+**** Build of configuration Debug for project TestApp ****
+
+**** Internal Builder is used for build               ****
+g++ -IC:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes -IC:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading -O0 -g3 -Wall -c -fmessage-length=0 -o src\TestApp.o ..\src\TestApp.cpp
+In file included from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/RefcountedObject.h:11:0,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/Thread.h:11,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:10,
+                 from ..\src\TestApp.cpp:10:
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:11:0: warning: "platformptr" redefined [enabled by default]
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/defs.h:10:0: note: this is the location of the previous definition
+In file included from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/RefcountedObject.h:11:0,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/Thread.h:11,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:10,
+                 from ..\src\TestApp.cpp:10:
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h: In destructor 'MemAllocator::~MemAllocator()':
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:36:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h: In member function 'void MemAllocator::unallocMem(void*)':
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:63:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:69:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+In file included from ..\src\TestApp.cpp:10:0:
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h: In static member function 'static void System::PoolableThread::callback(void*)':
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:34:8: error: invalid use of member 'System::PoolableThread::isrunning' in static member function
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:37:10: error: from this location
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:33:26: error: invalid use of member 'System::PoolableThread::tasks' in static member function
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:49:15: error: from this location
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h: In member function 'void System::ThreadPool::QueueUserWorkItem(void (*)(void*), void*)':
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:103:44: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:99:7: warning: unused variable 'leastnum' [-Wunused-variable]
+Build error occurred, build is stopped
+Time consumed: 6410  ms.  
+
+**** Build of configuration Debug for project TestApp ****
+
+**** Internal Builder is used for build               ****
+g++ -IC:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes -IC:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading -O0 -g3 -Wall -c -fmessage-length=0 -o src\TestApp.o ..\src\TestApp.cpp
+In file included from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/RefcountedObject.h:11:0,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/Thread.h:11,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:10,
+                 from ..\src\TestApp.cpp:10:
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:11:0: warning: "platformptr" redefined [enabled by default]
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/defs.h:10:0: note: this is the location of the previous definition
+In file included from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/RefcountedObject.h:11:0,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/Thread.h:11,
+                 from C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:10,
+                 from ..\src\TestApp.cpp:10:
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h: In destructor 'MemAllocator::~MemAllocator()':
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:36:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h: In member function 'void MemAllocator::unallocMem(void*)':
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:63:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\CoreTypes/mempool.h:69:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+In file included from ..\src\TestApp.cpp:10:0:
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h: In static member function 'static void System::PoolableThread::callback(void*)':
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:34:8: error: invalid use of member 'System::PoolableThread::isrunning' in static member function
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:37:10: error: from this location
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:33:26: error: invalid use of member 'System::PoolableThread::tasks' in static member function
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:49:15: error: from this location
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h: In member function 'void System::ThreadPool::QueueUserWorkItem(void (*)(void*), void*)':
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:103:44: error: ISO C++ forbids comparison between pointer and integer [-fpermissive]
+C:\Users\webadm\Documents\CProjects\ModernPlusPlus\Threading/ThreadPool.h:99:7: warning: unused variable 'leastnum' [-Wunused-variable]
+Build error occurred, build is stopped
+Time consumed: 4956  ms.  
